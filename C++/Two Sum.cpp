@@ -43,6 +43,6 @@ int main()
     int tmp;
     while (cin>>tmp) Nums.push_back(tmp);
     ret=TwoSum.twoSum(Nums,Target);
-    for (int i=0;i<ret.size();i++)
+    for (size_t i=0;i<ret.size();i++)
         cout<<ret[i]<<' ';
 }

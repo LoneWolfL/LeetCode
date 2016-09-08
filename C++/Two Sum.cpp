@@ -1,4 +1,4 @@
-///LeetCode 1 TwoSum C++
+///LeetCode 1. Two Sum C++
 ///write by LoneWolfL in 16.07.28
 /**
 test:

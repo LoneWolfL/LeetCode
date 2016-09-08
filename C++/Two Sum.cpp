@@ -4,6 +4,7 @@
 test:
 9
 2 7 11 15
+
 6
 3 3 2
 **/
@@ -36,13 +37,17 @@ public:
 int main()
 {
     Solution TwoSum;
-    vector<int> Nums;
-    vector<int> ret;
+    //input
     int Target;
+    vector<int> Nums;
     cin>>Target;
     int tmp;
-    while (cin>>tmp) Nums.push_back(tmp);
-    ret=TwoSum.twoSum(Nums,Target);
-    for (size_t i=0;i<ret.size();i++)
-        cout<<ret[i]<<' ';
+    while (cin>>tmp)
+        Nums.push_back(tmp);
+    //calculate
+    vector<int> ans;
+    ans=TwoSum.twoSum(Nums,Target);
+    //output
+    for (size_t i=0;i<ans.size();i++)
+        cout<<ans[i]<<' ';
 }
